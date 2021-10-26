@@ -4,7 +4,7 @@
 package testProject;
 
 public class Library {
-    public boolean someLibraryMethod() {
+    public boolean soeLibraryMethod() {
         return true;
     }
 }
