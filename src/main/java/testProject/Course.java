@@ -19,9 +19,21 @@ public class Course {
 	public ArrayList<Module> getModules() {
 		return modules;
 	}
+	public void addModule(Module m) {
+		modules.add(m);
+	}
+	public void removeModule(Module m) {
+		modules.remove(m);
+	}
 	
 	public ArrayList<Student> getStudents() {
 		return students;
+	}
+	public void addStudent(Student s) {
+		students.add(s);
+	}
+	public void removeStudent(Student s) {
+		students.remove(s);
 	}
 	
 	public DateTime getStartDate() {

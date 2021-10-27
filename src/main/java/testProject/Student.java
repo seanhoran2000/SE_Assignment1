@@ -1,13 +1,14 @@
 package testProject;
 
-//import org.joda.time.*;
+import java.util.ArrayList; // import the ArrayList class
+
 public class Student {
 	private String name;
 	private int age;
 	private String DOB;
 	private String username;
-	private String [] courses;
-	private String [] modules;
+	private ArrayList<Course> courses = new ArrayList<Course>(); // Create an ArrayList object
+	private ArrayList<Module> modules = new ArrayList<Module>(); 
 	
 	public String getName() {
 		return name;
@@ -35,20 +36,24 @@ public class Student {
 		username = name+age;
 		return username;
 	}
-	/*public void setUsername(String username) {
-		this.username = username;
-	}*/
-	
-	public String[] getCourses() {
+
+	public ArrayList<Course> getCourses() {
 		return courses;
 	}
-	public void setCourses(String[] courses) {
-		this.courses = courses;
+	public void addCourse(Course c) {
+		courses.add(c);
 	}
-	public String[] getModules() {
+	public void removeCourse(Course c) {
+		courses.remove(c);
+	}
+	
+	public ArrayList<Module> getModules() {
 		return modules;
 	}
-	public void setModules(String[] modules) {
-		this.modules = modules;
+	public void addModule(Module m) {
+		modules.add(m);
+	}
+	public void removeModule(Module m) {
+		modules.remove(m);
 	}
 }

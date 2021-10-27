@@ -5,7 +5,6 @@ public class Module {
 	private String mName;
 	private String mId;
 	private ArrayList<Student> students = new ArrayList<Student>(); // Create an ArrayList object
-	//private ArrayList<Student> students = new ArrayList<Student>(); // Create an ArrayList object
 	
 	public String getMName() {
 		return mName;
@@ -23,6 +22,13 @@ public class Module {
 	
 	public ArrayList<Student> getStudents() {
 		return students;
+	}
+	
+	public void addStudent(Student s) {
+		students.add(s);
+	}
+	public void removeStudent(Student s) {
+		students.remove(s);
 	}
 	
 }
